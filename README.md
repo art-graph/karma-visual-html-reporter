@@ -1,0 +1,1 @@
+# karma-visual-html-reporter
