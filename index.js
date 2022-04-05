@@ -7,7 +7,6 @@ var initReporter = function (karmaConfig, baseReporterDecorator) {
   var jasmineCoreIndex = 0;
 
   const files = karmaConfig.files;
-  console.log('befor-files: ', files);
   baseReporterDecorator(this);
 
   if (karmaConfig.jasmineHtmlReporter) {
