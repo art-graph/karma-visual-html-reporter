@@ -1,6 +1,6 @@
 {
   "name": "karma-visual-html-reporter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "directories": {
@@ -9,6 +9,12 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "files": [
+    "css",
+    "lib",
+    "index.js",
+    "snapshot-matchers.js"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/art-graph/karma-visual-html-reporter.git"
