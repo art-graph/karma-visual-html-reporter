@@ -26,14 +26,30 @@ var initReporter = function (karmaConfig, baseReporterDecorator) {
     }
   });
 
-  files.splice(++jasmineCoreIndex, 0, createPattern(__dirname + '/css/jasmine.css'));
-  files.splice(++jasmineCoreIndex, 0, createPattern(__dirname + '/lib/html.jasmine.reporter.js'));
-  files.splice(++jasmineCoreIndex, 0, createPattern(__dirname + '/lib/adapter.js'));
-  files.push(createPattern(__dirname + '/snapshot-matchers.js'))
+  files.splice(
+    ++jasmineCoreIndex,
+    0,
+    createPattern(__dirname + "/css/jasmine.css")
+  );
+  files.splice(
+    ++jasmineCoreIndex,
+    0,
+    createPattern(__dirname + "/lib/html.jasmine.reporter.js")
+  );
+  files.splice(
+    ++jasmineCoreIndex,
+    0,
+    createPattern(__dirname + "/lib/adapter.js")
+  );
+  files.splice(
+    ++jasmineCoreIndex,
+    0,
+    createPattern(__dirname + "/snapshot-matchers.js")
+  );
 };
 
-initReporter.$inject = ['config', 'baseReporterDecorator'];
+initReporter.$inject = ["config", "baseReporterDecorator"];
 
 module.exports = {
-  'reporter:visual-test-html': ['type', initReporter],
+  "reporter:visual-test-html": ["type", initReporter],
 };
